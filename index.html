@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+            <p>Hello! I'm a passionate web developer with 2 years of experience creating beautiful and functional websites. I specialize in front-end development but also enjoy working with databases and backend technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML/CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level html-css">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level javascript">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Database</h3>
+                <div class="skill-bar">
+                    <div class="skill-level database">70%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-gallery">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>E-commerce Site</h3>
+                <p>A fully responsive online store with product filtering.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Task Manager</h3>
+                <p>A web app for managing daily tasks with drag-and-drop.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Weather App</h3>
+                <p>Real-time weather information using API integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formSuccess" class="success-message" style="display: none;">
+            Thank you! Your message has been sent.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
