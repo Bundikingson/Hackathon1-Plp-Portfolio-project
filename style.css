@@ -228,3 +228,6 @@ footer {
         margin: 0.5rem 0;
     }
 }
+.skill-level.python {
+  background: #3776ab; /* Python blue */
+}
