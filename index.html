@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <!-- No scripts in head! -->
 </head>
 <body>
     <header>
@@ -28,7 +26,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-            <p>Hello! I'm a passionate web developer with 2 years of experience creating beautiful and functional websites. I specialize in front-end development but also enjoy working with databases and backend technologies.</p>
+            <p>Hello! I'm a passionate web developer with 2 years of experience creating beautiful and functional websites.</p>
         </div>
     </section>
 
@@ -62,17 +60,17 @@
             <div class="project-card">
                 <img src="https://via.placeholder.com/300x200" alt="Project 1">
                 <h3>E-commerce Site</h3>
-                <p>A fully responsive online store with product filtering.</p>
+                <p>A fully responsive online store.</p>
             </div>
             <div class="project-card">
                 <img src="https://via.placeholder.com/300x200" alt="Project 2">
                 <h3>Task Manager</h3>
-                <p>A web app for managing daily tasks with drag-and-drop.</p>
+                <p>A web app for managing daily tasks.</p>
             </div>
             <div class="project-card">
                 <img src="https://via.placeholder.com/300x200" alt="Project 3">
                 <h3>Weather App</h3>
-                <p>Real-time weather information using API integration.</p>
+                <p>Real-time weather information.</p>
             </div>
         </div>
     </section>
@@ -103,7 +101,15 @@
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
 
+    <!-- ALL SCRIPTS LOAD HERE - PROPER ORDER -->
+    <!-- 1. Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    
+    <!-- 2. Your Firebase Config -->
     <script src="firebase-config.js"></script>
+    
+    <!-- 3. Your Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
