@@ -27,4 +27,4 @@ A responsive personal portfolio website built with **HTML, CSS, JavaScript, and 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/BundiKingson/Hackathon1-Plp-Portfolio-project.git
-cd your-portfolio
+cd Hackathon1-Plp-Portfolio-project.git
